@@ -16,7 +16,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Subtask {
+public class Story {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
@@ -24,6 +24,8 @@ public class Subtask {
     private Long complexity;
 
     private Long remainingDays;
+
+    private String name;
 
 
 }

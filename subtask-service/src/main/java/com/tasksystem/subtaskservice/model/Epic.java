@@ -9,12 +9,12 @@ import lombok.Setter;
 import java.util.List;
 
 @Entity
-@Table(name="main-tasks")
+@Table(name="epics")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class MainTask {
+public class Epic {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -23,6 +23,7 @@ public class MainTask {
 
     private String mainTaskNumber;
 
+    @OneToMany(cascade = CascadeType.ALL)
     private List<Subtask> subtasks;
 
 

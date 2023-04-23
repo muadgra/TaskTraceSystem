@@ -11,7 +11,7 @@ import java.util.Date;
 @NoArgsConstructor
 @Builder
 @Data
-public class SubtaskCreateDTO {
+public class EpicCreateRequestDTO {
     public String name;
     public Date startDate;
     public Date expectedEndDate;
